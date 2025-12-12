@@ -6,9 +6,9 @@ import { useEffect, useState } from 'react';
 export default function Hero() {
   const navigate = useNavigate();
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 300], [0, 100]);
-  const y2 = useTransform(scrollY, [0, 300], [0, -50]);
-  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+  const y1 = useTransform(scrollY, [0, 150], [0, 80]);
+  const y2 = useTransform(scrollY, [0, 150], [0, -40]);
+  const opacity = useTransform(scrollY, [0, 150], [1, 0]);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
